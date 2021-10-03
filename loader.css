@@ -1,0 +1,85 @@
+.loader{
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(60deg);
+
+    z-index: -1;
+}
+
+.loader span{
+    position: absolute;
+
+    display: block;
+
+    border: 5px solid #f20044;
+
+    box-shadow: 0 5px 0 #ccc,
+                inset 0 5px 0 #ccc;
+
+    border-radius: 50%;
+
+    animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        transform: translateZ(-200px);
+    }
+    50%{
+        transform: translateZ(-80px);
+    }
+}
+
+.loader span:nth-child(1){
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(2){
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    animation-delay: 0.5s;
+}
+.loader span:nth-child(3){
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(4){
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    animation-delay: 0.3s;
+}
+.loader span:nth-child(5){
+    top: 40px;
+    left: 40px;
+    bottom: 40px;
+    right: 40px;
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(6){
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+    animation-delay: 0.1s;
+}
+.loader span:nth-child(7){
+    top: 60px;
+    left: 60px;
+    bottom: 60px;
+    right: 60px;
+    animation-delay: 0s;
+}

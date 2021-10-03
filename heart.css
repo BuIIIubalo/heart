@@ -1,0 +1,58 @@
+.heart{
+    height: 90px;
+    width: 90px;
+
+    background-color: #f20044;
+    position: relative;
+
+    transform: rotate(-45deg);
+
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart .6s linear infinite;
+}
+
+@keyframes heart {
+    0%{
+        transform: rotate(-45deg) scale(1.1);
+    }
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    0%{
+        transform: rotate(-45deg) scale(.8);
+    }
+}
+
+.heart::before{
+    content: '';
+
+    position: absolute;
+
+    height: 90px;
+    width: 90px;
+
+    background-color: #f20044;
+
+    top: -50%;
+
+    border-radius: 50%;
+
+    box-shadow: -10px -10px 90px #f20044;
+}
+
+.heart::after{
+    content: '';
+
+    position: absolute;
+
+    height: 90px;
+    width: 90px;
+
+    background-color: #f20044;
+
+    right: -50%;
+
+    border-radius: 50%;
+
+    box-shadow: 10px 10px 90px #f20044;
+}
